@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const HomeAboutSection = () => {
   return (
-    <div className="bg-gray-100 py-12 px-4 md:px-8">
+    <div className="bg-white py-12 px-4 md:px-8">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800">Welcome to</h1>
         <h2 className="text-4xl font-bold text-orange-500 relative inline-block">

@@ -12,7 +12,7 @@ const trustees = [
 
 const HomeTrusteeTab = () => {
   return (
-    <div className="bg-orange-50 py-12 px-4 md:px-8">
+    <div className="bg-slate-100 py-12 px-4 md:px-8">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-orange-500">Trustees</h1>
         <h2 className="text-4xl font-bold  relative text-gray-800 inline-block">
