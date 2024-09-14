@@ -5,7 +5,7 @@ import LatestUpdates from "@/components/LatestUpdates";
 
 export default function Home() {
   return (
-    <div>
+    <div className='min-h-[80vh]'>
       <HomeImageSlider/>
       <HomeAboutSection/>
       <HomeTrusteeTab/>
