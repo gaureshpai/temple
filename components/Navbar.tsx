@@ -32,7 +32,7 @@ const Navbar = () => {
           className={`bg-orange-400 justify-center content-center text-white text-center text-sm lg:text-base 5xl:text-xl h-[3vh] ${isScrolled ? 'hidden' : 'block'
             }`}
         >
-          Official website for the Rama temple
+          Official website of the Rama temple
         </div>
 
         <div className="bg-white h-[12vh]">
