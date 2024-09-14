@@ -27,19 +27,16 @@ const Navbar = () => {
   return (
     <div className="bg-white overflow-hidden">
       <nav className="fixed w-full top-0 left-0 z-50 transition-all duration-300 ease-in-out bg-white shadow-lg">
-        {/* Top Message Bar */}
         <div
           className={`bg-orange-400 justify-center content-center text-white text-center text-sm lg:text-base 5xl:text-xl h-[3vh] ${isScrolled ? 'hidden' : 'block'
             }`}
         >
-          Official website for the Rama temple
+          Official website of the Rama temple
         </div>
 
         <div className="bg-white h-[12vh]">
           <div className="container mx-auto h-full px-2 max-w-5xl flex items-center justify-between">
-            {/* Mobile and Desktop Layout */}
             <div className="flex items-center w-full justify-between md:w-auto">
-              {/* Logo */}
               <div className="flex items-center">
                 <Link href="/" className="text-xl 5xl:text-2xl font-bold text-orange-400 flex items-center">
                   <Image
@@ -51,8 +48,6 @@ const Navbar = () => {
                   />
                 </Link>
               </div>
-
-              {/* Hamburger Menu (mobile view) */}
               <div className="md:hidden flex items-center">
                 <button
                   title="hamburger"
@@ -79,8 +74,6 @@ const Navbar = () => {
                 </button>
               </div>
             </div>
-
-            {/* Desktop Menu */}
             <div className="hidden md:flex items-center h-full space-x-6">
               {navItems.map((item) => (
                 <Link
@@ -96,8 +89,6 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-
-          {/* Mobile Menu */}
           {isMobileMenuOpen && (
             <div className="md:hidden bg-white shadow-lg fixed top-[15vh] left-0 right-0 transition-all duration-300 ease-in-out">
               <div className="flex flex-col px-6 py-6 space-y-4">
