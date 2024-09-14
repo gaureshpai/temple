@@ -65,8 +65,6 @@ const HomeImageSlider = () => {
           />
         </div>
       ))}
-
-      {/* Centering buttons vertically and changing their color */}
       <div className="absolute inset-0 flex items-center justify-between px-4">
         <button
           title="Previous"
@@ -109,8 +107,6 @@ const HomeImageSlider = () => {
           </svg>
         </button>
       </div>
-
-      {/* Dots navigation */}
       <div className="absolute bottom-0 flex justify-center w-full p-4">
         {images.map((image, index) => (
           <button

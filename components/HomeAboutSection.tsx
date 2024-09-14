@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'; // Adjust based on your image import method
+import Image from 'next/image';
 
 const HomeAboutSection = () => {
   return (
@@ -13,10 +13,9 @@ const HomeAboutSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 px-4">
-        {/* Left Side: Image */}
         <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
-            src="/images/logo.jpg" // Replace with the path to your image
+            src="/images/logo.jpg"
             alt="Deity Photo"
             width={600}
             height={600}
@@ -24,7 +23,6 @@ const HomeAboutSection = () => {
           />
         </div>
 
-        {/* Right Side: Text */}
         <div className="w-full md:w-1/2">
           <h3 className="text-3xl font-semibold text-gray-800 mb-6">Shri Rama Temple History</h3>
           <p className="text-gray-700 mb-4 leading-relaxed">
