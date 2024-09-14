@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const HomeAboutSection = () => {
   return (
@@ -34,12 +35,12 @@ const HomeAboutSection = () => {
           <p className="text-gray-700 mb-6 leading-relaxed">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia porro, quo pariatur suscipit aut ad quis quae voluptates veritatis accusamus blanditiis consequatur iusto rerum reprehenderit maxime totam nisi repellendus hic?
           </p>
-          <a
+          <Link
             href="/About"
             className="bg-orange-500 text-white font-bold p-2 hover:bg-transparent hover:text-orange-500 border-2 border-orange-500 transition duration-300 ease-in-out shadow-md hover:shadow-lg"
           >
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </div>
