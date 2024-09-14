@@ -1,8 +1,15 @@
+import ContactUsForm from '@/components/ContactUsForm'
+import ContactUsLinks from '@/components/ContactUsLinks'
+import ContactUsMap from '@/components/ContactUsMap'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <ContactUsLinks/>
+      <ContactUsForm/>
+      <ContactUsMap/>
+    </div>
   )
 }
 
