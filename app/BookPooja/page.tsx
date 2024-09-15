@@ -51,10 +51,8 @@ const BookPooja: React.FC = () => {
     };
 
     const handlePayment = async () => {
-        // Simulate payment processing
-        // Replace this with your actual payment gateway integration
         const paymentSuccessful = await new Promise<boolean>((resolve) =>
-            setTimeout(() => resolve(true), 2000) // Simulating a 2-second payment processing time
+            setTimeout(() => resolve(true), 2000)
         );
 
         if (paymentSuccessful) {

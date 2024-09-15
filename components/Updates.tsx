@@ -44,8 +44,7 @@ const updates = [
     heading: 'Update 6',
     description: 'This is a brief description of the sixth update. It gives insight into the latest activities or announcements.',
     link: '#'
-  },
-  // Add more updates as needed
+  }
 ];
 
 const Updates = () => {

@@ -74,9 +74,9 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-              <button className="bg-red-500 text-white px-6 py-2 rounded-3xl animate-pulse transition duration-300 hover:bg-red-600 text-sm lg:text-base xl:text-lg 2xl:text-xl 6xl:text-2xl">
+              <Link href={'/Live'} className="bg-red-500 text-white px-6 py-2 rounded-3xl animate-pulse transition duration-300 hover:bg-red-600 text-sm lg:text-base xl:text-lg 2xl:text-xl 6xl:text-2xl">
                 Live
-              </button>
+              </Link>
             </div>
           </div>
           {isMobileMenuOpen && (
@@ -92,9 +92,9 @@ const Navbar = () => {
                     {item.name}
                   </Link>
                 ))}
-                <button className="bg-red-500 text-white px-4 py-2 rounded-3xl animate-pulse hover:bg-red-600 text-sm lg:text-base xl:text-lg 2xl:text-xl mt-2">
+                <Link href={'/Live'} className="bg-red-500 text-white px-4 py-2 rounded-3xl animate-pulse hover:bg-red-600 text-sm lg:text-base xl:text-lg 2xl:text-xl mt-2">
                   Live
-                </button>
+                </Link>
               </div>
             </div>
           )}
