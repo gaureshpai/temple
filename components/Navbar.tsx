@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-white overflow-hidden">
+    <div className="bg-white overflow-hidden" id='Navbar'>
       <nav className="fixed w-full top-0 left-0 z-50 transition-all duration-300 ease-in-out bg-white shadow-lg">
         <div
           className='bg-orange-400 justify-center content-center text-white text-center text-sm lg:text-base 5xl:text-xl h-[3vh]'

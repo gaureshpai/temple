@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdminDayPanchanga = () => {
   return (
-    <div>AdminDayPanchanga</div>
+    <div id='AdminDayPanchanga'>AdminDayPanchanga</div>
   )
 }
 

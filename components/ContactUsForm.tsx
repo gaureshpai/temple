@@ -34,7 +34,7 @@ const ContactUsForm = () => {
   };
 
   return (
-    <section className="bg-slate-50 py-10">
+    <section className="bg-slate-50 py-10" id='ContactUsForm'>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-gray-800">Write to Us</h1>

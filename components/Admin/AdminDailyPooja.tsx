@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdminDailyPooja = () => {
   return (
-    <div>AdminDailyPooja</div>
+    <div id='AdminDailyPooja'>AdminDailyPooja</div>
   )
 }
 

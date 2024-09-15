@@ -24,7 +24,7 @@ const BankAddress = 'Address';
 
 const ContactBank = () => {
     return (
-        <div className="bg-gray-50 py-12 px-4 md:px-8">
+        <div className="bg-gray-50 py-12 px-4 md:px-8" id='ContactBank'>
             <div className="text-center mb-12">
                 <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Bank Details</h1>
                 <hr className="border-t-3 border-orange-500 my-4 mx-auto w-1/12" />

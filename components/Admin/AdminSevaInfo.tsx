@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdminSevaInfo = () => {
   return (
-    <div>AdminSevaInfo</div>
+    <div id='AdminSevaInfo'>AdminSevaInfo</div>
   )
 }
 

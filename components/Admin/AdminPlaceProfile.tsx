@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdminPlaceProfile = () => {
   return (
-    <div>AdminPlaceProfile</div>
+    <div id='AdminPlaceProfile'>AdminPlaceProfile</div>
   )
 }
 

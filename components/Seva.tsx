@@ -17,7 +17,7 @@ const sevaDetails: SevaDetail[] = [
 
 const Seva = () => {
   return (
-    <div className="bg-white py-16 px-4 md:px-8">
+    <div className="bg-white py-16 px-4 md:px-8" id='Seva'>
       <div className="text-center mb-16">
         <h1 className="text-5xl font-bold text-orange-500 mb-4">Seva Offerings</h1>
         <h2 className="text-3xl font-semibold text-gray-800 mb-4">Participate in Temple Services</h2>

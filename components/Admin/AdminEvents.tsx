@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdminEvents = () => {
   return (
-    <div>AdminEvents</div>
+    <div id='AdminEvents'>AdminEvents</div>
   )
 }
 

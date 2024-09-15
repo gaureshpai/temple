@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdminCommitteInfo = () => {
   return (
-    <div>AdminCommitteInfo</div>
+    <div id='AdminCommitteInfo'>AdminCommitteInfo</div>
   )
 }
 

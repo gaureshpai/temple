@@ -44,7 +44,7 @@ const trustees: Trustee[] = [
 
 const AboutAdministration = () => {
   return (
-    <div className="bg-white py-16 px-4 md:px-8">
+    <div className="bg-white py-16 px-4 md:px-8" id='AboutAdministration'>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-orange-500 mb-4">Temple Administration</h1>
