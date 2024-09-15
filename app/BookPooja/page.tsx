@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
+import Image from 'next/image';
 
 const initialSevaOptions = [
     { id: 1, name: 'Annadanam Seva', cost: 100 },
@@ -17,10 +17,11 @@ const BookPooja: React.FC = () => {
         phone: '',
         date: '',
         time: [] as string[],
+        receipt: ''
     });
     const [sevaOptions, setSevaOptions] = useState(initialSevaOptions);
     const [totalCost, setTotalCost] = useState(0);
-    const [paymentStatus, setPaymentStatus] = useState(false); // Track payment status
+    const [paymentStatus, setPaymentStatus] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value, type, checked } = e.target;
@@ -34,11 +35,17 @@ const BookPooja: React.FC = () => {
                 calculateTotalCost(newSevaIds);
                 return { ...prevData, sevaIds: newSevaIds };
             });
-        } else if (type === 'checkbox') {
+        } else if (name === 'time') {
             const newTime = checked
                 ? [...formData.time, value]
                 : formData.time.filter((item) => item !== value);
             setFormData({ ...formData, [name]: newTime });
+        } else if (name === 'receipt') {
+            const file = e.target.files?.[0];
+            if (file) {
+                const fileUrl = URL.createObjectURL(file);
+                setFormData({ ...formData, receipt: fileUrl });
+            }
         } else {
             setFormData({ ...formData, [name]: value });
         }
@@ -50,24 +57,12 @@ const BookPooja: React.FC = () => {
         setTotalCost(cost);
     };
 
-    const handlePayment = async () => {
-        const paymentSuccessful = await new Promise<boolean>((resolve) =>
-            setTimeout(() => resolve(true), 2000)
-        );
-
-        if (paymentSuccessful) {
-            setPaymentStatus(true);
-        } else {
-            alert('Payment failed. Please try again.');
-        }
-    };
-
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if (paymentStatus) {
+        if (formData.receipt && paymentStatus) {
             console.log('Form submitted:', formData, totalCost);
         } else {
-            alert('Please complete the payment before submitting the form.');
+            alert('Please upload the payment receipt and complete the payment before submitting the form.');
         }
     };
 
@@ -181,28 +176,50 @@ const BookPooja: React.FC = () => {
                                 </label>
                             </div>
                         </div>
-                        <div className="flex justify-between items-center">
+                        <div className="flex items-center space-y-4 md:space-y-0 md:space-x-4">
                             <span className="text-xl font-bold">Total Cost: ₹{totalCost}</span>
-                            <button
-                                type="button"
-                                onClick={handlePayment}
-                                className="bg-green-500 text-white font-bold p-2 hover:bg-transparent hover:text-green-500 border-2 border-green-500 transition duration-300 ease-in-out shadow-md hover:shadow-lg"
-                            >
-                                Pay Online
-                            </button>
+                        </div>
+                        <div className="mt-4">
+                            <Image
+                                src="/images/ppp.png"
+                                alt="QR Code"
+                                width={200}
+                                height={200}
+                                className="object-cover"
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="receipt" className="block text-sm font-semibold text-gray-700 mb-2">Upload Payment Receipt</label>
+                            <input
+                                type="file"
+                                id="receipt"
+                                name="receipt"
+                                onChange={handleChange}
+                                accept="image/*"
+                                className="w-full p-3 text-gray-700 border border-gray-300 rounded-md"
+                            />
+                            {formData.receipt && (
+                                <div className="mt-4">
+                                    <Image
+                                        src={formData.receipt}
+                                        alt="Payment Receipt"
+                                        width={300}
+                                        height={300}
+                                        className="object-cover"
+                                    />
+                                </div>
+                            )}
+                            <p className="mt-2 text-gray-700">Upload a screenshot of the payment to book the service.You will recieve the message on confirmation.</p>
+                        </div>
+                        <div className='w-100 text-center'>
                             <button
                                 type="submit"
-                                className="bg-orange-500 text-white font-bold p-2 hover:bg-transparent hover:text-orange-500 border-2 border-orange-500 transition duration-300 ease-in-out shadow-md hover:shadow-lg"
+                                className="bg-orange-500 text-center text-white font-bold p-3 hover:bg-transparent hover:text-orange-500 border-2 border-orange-500 transition duration-300 ease-in-out shadow-md hover:shadow-lg"
                             >
                                 Submit Booking
                             </button>
                         </div>
                     </form>
-                </div>
-                <div className="p-8 text-center">
-                    <Link href="/" className="bg-orange-500 text-white font-bold p-2 hover:bg-transparent hover:text-orange-500 border-2 border-orange-500 transition duration-300 ease-in-out shadow-md hover:shadow-lg">
-                        Back to Home
-                    </Link>
                 </div>
             </div>
         </main>
