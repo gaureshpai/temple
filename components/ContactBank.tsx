@@ -69,13 +69,13 @@ const ContactBank = () => {
                     <div className="flex flex-col justify-center items-center bg-white border border-gray-300 p-6 rounded-lg shadow-md">
                         <div className="text-center mb-6">
                             <p className="text-lg font-semibold text-gray-800 mb-4">
-                                FOR DONATIONS:
+                                To book any sevas:
                             </p>
                             <Link
-                                href="/Donate"
+                                href="/BookPooja"
                                 className="bg-green-500 text-white font-bold p-3 hover:bg-transparent hover:text-green-500 border-2 border-green-500 transition duration-300 ease-in-out shadow-md hover:shadow-lg"
                             >
-                                Donate
+                                Sevas
                             </Link>
                         </div>
                         <hr className="border-t border-gray-300 my-6 w-full" />
