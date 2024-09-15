@@ -14,14 +14,11 @@ const ContactUsForm = () => {
 
   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
 
-  // Captcha answer (in a real scenario, this should be more complex and not hardcoded)
-  const captchaAnswer = '11'; // 3 + 8 = 11
+  const captchaAnswer = '11';
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-
-    // Validate captcha on change
     if (name === 'captcha') {
       setIsCaptchaValid(value === captchaAnswer);
     }
@@ -30,7 +27,6 @@ const ContactUsForm = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     if (isCaptchaValid) {
-      // Handle form submission logic here
       console.log('Form submitted:', formData);
     } else {
       alert('Captcha is incorrect. Please try again.');
