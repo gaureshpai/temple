@@ -1,3 +1,4 @@
+import ContactBank from '@/components/ContactBank'
 import ContactUsForm from '@/components/ContactUsForm'
 import ContactUsLinks from '@/components/ContactUsLinks'
 import ContactUsMap from '@/components/ContactUsMap'
@@ -8,6 +9,7 @@ const page = () => {
     <div className='min-h-[80vh]'>
       <ContactUsLinks/>
       <ContactUsForm/>
+      <ContactBank/>
       <ContactUsMap/>
     </div>
   )
