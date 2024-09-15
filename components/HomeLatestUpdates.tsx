@@ -26,7 +26,7 @@ const updates = [
   },
 ];
 
-const LatestUpdates = () => {
+const HomeLatestUpdates = () => {
   return (
     <div className="bg-white py-12 px-4 md:px-8">
       <div className="text-center mb-12">
@@ -67,4 +67,4 @@ const LatestUpdates = () => {
   );
 };
 
-export default LatestUpdates;
+export default HomeLatestUpdates;
