@@ -8,9 +8,9 @@ const page = () => {
   return (
     <div className='min-h-[80vh]'>
       <AboutHistory/>
+      <AboutFestivals />
+      <AboutAdministration />
       <AboutCallender/>
-      <AboutAdministration/>
-      <AboutFestivals/>
     </div>
   )
 }
