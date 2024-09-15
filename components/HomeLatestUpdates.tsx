@@ -28,7 +28,7 @@ const updates = [
 
 const HomeLatestUpdates = () => {
   return (
-    <div className="bg-white py-12 px-4 md:px-8">
+    <div className="bg-white py-12 px-4 md:px-8" id='HomeLatestUpdates'>
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800">Latest Updates</h1>
         <hr className="border-t-2 border-orange-500 my-2 mx-auto w-1/12" />

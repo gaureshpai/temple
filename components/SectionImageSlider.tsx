@@ -2,7 +2,7 @@ import React from 'react'
 
 const SectionImageSlider = () => {
   return (
-    <div>SectionImageSlider</div>
+    <div id='SectionImageSlider'>SectionImageSlider</div>
   )
 }
 

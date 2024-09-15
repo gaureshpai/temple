@@ -50,7 +50,7 @@ const HomeImageSlider = () => {
   };
 
   return (
-    <div className="relative h-[85vh] overflow-hidden">
+    <div className="relative h-[85vh] overflow-hidden" id='HomeImageSlider'>
       {images.map((image, index) => (
         <div
           key={image.id}

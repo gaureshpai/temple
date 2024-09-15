@@ -30,7 +30,6 @@ const LiveEmbeddedYt: React.FC = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        // Fetch the playlist ID
         const playlistResponse = await axios.get(
           `https://www.googleapis.com/youtube/v3/channels`,
           {
@@ -44,7 +43,6 @@ const LiveEmbeddedYt: React.FC = () => {
 
         const uploadsPlaylistId = playlistResponse.data.items[0].contentDetails.relatedPlaylists.uploads;
 
-        // Fetch the latest video
         const videosResponse = await axios.get<VideoResponse>(
           `https://www.googleapis.com/youtube/v3/playlistItems`,
           {
@@ -65,7 +63,6 @@ const LiveEmbeddedYt: React.FC = () => {
           setLiveVideo(null);
         }
 
-        // Fetch the last live video
         const allVideosResponse = await axios.get<VideoResponse>(
           `https://www.googleapis.com/youtube/v3/search`,
           {
@@ -95,7 +92,7 @@ const LiveEmbeddedYt: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-[80vh] flex flex-col justify-center items-center bg-white p-8">
+    <div className="min-h-[80vh] flex flex-col justify-center items-center bg-white p-8" id='LiveEmbeddedYt'>
       <div className="w-full max-w-7xl bg-white p-6 rounded-lg shadow-lg">
         {loading ? (
           <div className="text-lg font-semibold text-gray-700">Loading...</div>

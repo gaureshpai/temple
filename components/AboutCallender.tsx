@@ -10,7 +10,7 @@ const calendarImages = [
 
 const AboutCallender = () => {
   return (
-    <div className="bg-slate-50 py-12 px-4 md:px-8">
+    <div className="bg-slate-50 py-12 px-4 md:px-8" id='AboutCallender'>
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-orange-500">Temple Calendar</h1>
         <h2 className="text-3xl font-semibold text-gray-800">

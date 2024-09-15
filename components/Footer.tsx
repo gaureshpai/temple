@@ -8,9 +8,16 @@ const Footer = () => {
   const email = "info@shreekrishna.org";
 
   return (
-    <footer className="bg-gray-900 text-white pt-12 pb-6 px-4 md:px-8 lg:px-16">
+    <footer className="bg-gray-900 text-white pt-12 pb-6 px-4 md:px-8 lg:px-16" id='Footer'>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700 transition-colors duration-300">
+            <h3 className="text-2xl font-bold mb-4 text-orange-500">ABOUT</h3>
+            <p className="text-gray-300 mb-4">About the temple</p>
+            <Link href="/About" className="text-orange-300 hover:text-orange-500 font-semibold">
+              About
+            </Link>
+          </div>
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700 transition-colors duration-300">
             <h3 className="text-2xl font-bold mb-4 text-orange-500">SEVA LIST</h3>
             <p className="text-gray-300 mb-4">
@@ -28,10 +35,24 @@ const Footer = () => {
             </Link>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700 transition-colors duration-300">
+            <h3 className="text-2xl font-bold mb-4 text-orange-500">UPDATES</h3>
+            <p className="text-gray-300 mb-4">Check out all the updates</p>
+            <Link href="/Updates" className="text-orange-300 hover:text-orange-500 font-semibold">
+              View Updates
+            </Link>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700 transition-colors duration-300">
             <h3 className="text-2xl font-bold mb-4 text-orange-500">CONTACT US</h3>
             <p className="text-gray-300 mb-4">Have questions? Reach out to us.</p>
             <Link href="/Contact" className="text-orange-300 hover:text-orange-500 font-semibold">
               Get in Touch
+            </Link>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700 transition-colors duration-300">
+            <h3 className="text-2xl font-bold mb-4 text-orange-500">LIVE</h3>
+            <p className="text-gray-300 mb-4">Watch the livestream</p>
+            <Link href="/Live" className="text-orange-300 hover:text-orange-500 font-semibold">
+              Watch Live
             </Link>
           </div>
         </div>
@@ -58,6 +79,9 @@ const Footer = () => {
               <p>Check website for latest timings</p>
             </div>
           </div>
+        </div>
+        <div className="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500 text-sm">
+          <p>Designed and developed by <a href="https://gauresh.vercel.app">hseruag</a></p>
         </div>
         <div className="mt-8 text-center text-gray-500 text-sm">
           <p>Copyright © {new Date().getFullYear()} {templeName}. All rights reserved.</p>

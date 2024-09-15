@@ -24,7 +24,7 @@ const BankAddress = 'Address';
 
 const ContactBank = () => {
     return (
-        <div className="bg-gray-50 py-12 px-4 md:px-8">
+        <div className="bg-gray-50 py-12 px-4 md:px-8" id='ContactBank'>
             <div className="text-center mb-12">
                 <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Bank Details</h1>
                 <hr className="border-t-3 border-orange-500 my-4 mx-auto w-1/12" />
@@ -69,13 +69,13 @@ const ContactBank = () => {
                     <div className="flex flex-col justify-center items-center bg-white border border-gray-300 p-6 rounded-lg shadow-md">
                         <div className="text-center mb-6">
                             <p className="text-lg font-semibold text-gray-800 mb-4">
-                                FOR DONATIONS:
+                                To book any sevas:
                             </p>
                             <Link
-                                href="/Donate"
+                                href="/BookPooja"
                                 className="bg-green-500 text-white font-bold p-3 hover:bg-transparent hover:text-green-500 border-2 border-green-500 transition duration-300 ease-in-out shadow-md hover:shadow-lg"
                             >
-                                Donate
+                                Sevas
                             </Link>
                         </div>
                         <hr className="border-t border-gray-300 my-6 w-full" />

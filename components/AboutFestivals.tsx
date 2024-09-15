@@ -53,7 +53,7 @@ const AboutFestivals = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-64">
+      <div className="flex justify-center items-center h-64" id='AboutFestivals'>
         <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-orange-500"></div>
       </div>
     );
@@ -61,7 +61,7 @@ const AboutFestivals = () => {
 
   if (festivals.length === 0) {
     return (
-      <div className="text-center py-12 bg-slate-50">
+      <div className="text-center py-12 bg-slate-50" id='AboutFestivals'>
         <h2 className="text-2xl font-semibold text-gray-800">No festivals to display at the moment.</h2>
         <p className="text-gray-600 mt-2">Please check back later for updates.</p>
       </div>
@@ -69,7 +69,7 @@ const AboutFestivals = () => {
   }
 
   return (
-    <div className="bg-slate-50 py-16 px-4 md:px-8">
+    <div className="bg-slate-50 py-16 px-4 md:px-8" id='AboutFestivals'>
       <div className="text-center mb-16">
         <h1 className="text-5xl font-bold text-gray-800 mb-4">Festivals at Shri Rama Temple</h1>
         <hr className="border-t-2 border-orange-500 my-4 mx-auto w-24" />

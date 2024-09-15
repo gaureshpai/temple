@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AboutHistory = () => {
   return (
-    <div className="bg-white py-12 px-4 md:px-8">
+    <div className="bg-white py-12 px-4 md:px-8" id='AboutHistory'>
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800">About Shri Rama Temple</h1>
         <hr className="border-t-2 border-orange-500 my-4 mx-auto w-1/12" />
