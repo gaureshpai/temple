@@ -1,20 +1,11 @@
-'use client';
+'use client'
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -28,8 +19,7 @@ const Navbar = () => {
     <div className="bg-white overflow-hidden">
       <nav className="fixed w-full top-0 left-0 z-50 transition-all duration-300 ease-in-out bg-white shadow-lg">
         <div
-          className={`bg-orange-400 justify-center content-center text-white text-center text-sm lg:text-base 5xl:text-xl h-[3vh] ${isScrolled ? 'hidden' : 'block'
-            }`}
+          className='bg-orange-400 justify-center content-center text-white text-center text-sm lg:text-base 5xl:text-xl h-[3vh]'
         >
           Official website of the Rama temple
         </div>
@@ -90,7 +80,7 @@ const Navbar = () => {
             </div>
           </div>
           {isMobileMenuOpen && (
-            <div className="md:hidden bg-white shadow-lg fixed top-[15vh] left-0 right-0 transition-all duration-300 ease-in-out">
+            <div className='top-[15vh] md:hidden bg-white shadow-lg fixed left-0 right-0 transition-all duration-300 ease-in-out'>
               <div className="flex flex-col px-6 py-6 space-y-4">
                 {navItems.map((item) => (
                   <Link
