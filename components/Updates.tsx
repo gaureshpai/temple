@@ -63,8 +63,8 @@ const Updates = () => {
                   <Image
                     src={update.imageSrc}
                     alt={update.heading}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: 'cover' }} 
                   />
                 </div>
                 <div className="p-6 flex-grow">
