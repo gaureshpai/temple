@@ -10,7 +10,7 @@ const Login: React.FC = () => {
     const router = useRouter();
     const session = useSession();
     if (session.data?.user) {
-        router.push('/admin');
+        router.push('/Admin');
     }
 
     const togglePasswordVisibility = () => {
