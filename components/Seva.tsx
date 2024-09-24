@@ -38,8 +38,8 @@ const Seva = () => {
                 <Image
                   src={seva.imageSrc}
                   alt={seva.name}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style={{ objectFit: 'cover' }} 
                 />
               </div>
               <div className="p-6">

@@ -60,8 +60,8 @@ const HomeImageSlider = () => {
           <Image
             src={image.url}
             alt={image.alt}
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }} 
           />
         </div>
       ))}

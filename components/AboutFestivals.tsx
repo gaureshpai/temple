@@ -83,8 +83,8 @@ const AboutFestivals = () => {
               <Image
                 src={festival.imageSrc}
                 alt={festival.name}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: 'cover' }} 
               />
             </div>
             <div className="p-6">

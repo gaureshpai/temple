@@ -21,9 +21,7 @@ export default function RootLayout({
         className= ''
       >
         <SessionProvider>
-        <Navbar/>
-        {children}
-        <Footer/>
+          {children}
         </SessionProvider>
       </body>
     </html>
