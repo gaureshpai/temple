@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500 text-sm">
-          <p>Designed and developed by <a href="https://gauresh.vercel.app">hseruag</a></p>
+          <p>Designed and developed by <a href="https://kreekarvat.in">Kreekarvat Technologies</a></p>
         </div>
         <div className="mt-8 text-center text-gray-500 text-sm">
           <p>Copyright © {new Date().getFullYear()} {templeName}. All rights reserved.</p>
