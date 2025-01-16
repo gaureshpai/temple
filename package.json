@@ -9,19 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "axios": "^1.7.7",
-    "next": "15.0.3",
-    "next-auth": "^4.24.10",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-icons": "^5.3.0"
+    "axios": "^1.7.9",
+    "next": "15.1.2",
+    "next-auth": "^4.24.11",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-icons": "^5.4.0"
   },
   "devDependencies": {
     "@types/node": "^22",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "postcss": "^8",
-    "tailwindcss": "^3.4.15",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
 }
